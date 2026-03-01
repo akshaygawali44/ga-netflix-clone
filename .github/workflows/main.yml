@@ -21,3 +21,7 @@ jobs:
       - name: tag image
         run: docker tag netflix:v1 rahamshaik/gabimage
 
+      - name: Output of the Job
+        run: echo "${{ toJson(github) }}" 
+
+
